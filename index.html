@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NextUp — Whatever You Need. Whoever's Nearby.</title>
+<meta name="description" content="NextUp is the on-demand services marketplace. 113 services across 14 categories. Find beauty, wellness, fitness, cleaning, repairs, and more — all in one app.">
+
+<!-- Preload fonts -->
+<link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="./base.css">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./demo-styles.css">
+</head>
+<body>
+
+  <!-- ==================== NAVIGATION ==================== -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">NextUp</a>
+      <div class="nav__links" id="navLinks">
+        <a href="#services" class="nav__link">Services</a>
+        <a href="#how-it-works" class="nav__link">How It Works</a>
+        <a href="#for-providers" class="nav__link">For Providers</a>
+        <a href="#faq" class="nav__link">Pricing</a>
+        <a href="#cta" class="nav__cta">Get Started</a>
+      </div>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="hero">
+    <div class="hero__grid" aria-hidden="true">
+      <div class="hero__grid-item hero__grid-item--1" style="background-image: url('./assets/grid-beauty.png')"></div>
+      <div class="hero__grid-item hero__grid-item--2" style="background-image: url('./assets/grid-cleaning.png')"></div>
+      <div class="hero__grid-item hero__grid-item--3" style="background-image: url('./assets/grid-dogs.png')"></div>
+      <div class="hero__grid-item hero__grid-item--4" style="background-image: url('./assets/grid-fitness.png')"></div>
+      <div class="hero__grid-item hero__grid-item--5" style="background-image: url('./assets/grid-repair.png')"></div>
+      <div class="hero__grid-item hero__grid-item--6" style="background-image: url('./assets/grid-spa.png')"></div>
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <p class="label hero__label">On-Demand Services</p>
+      <h1 class="headline headline--hero hero__headline">Whatever you need.<br>Whoever's nearby.</h1>
+      <p class="hero__subtitle">113 services. 14 categories. One tap.</p>
+      <div class="hero__buttons">
+        <a href="#services" class="btn btn--primary">Find a Service</a>
+        <a href="https://www.perplexity.ai/computer/a/nextup-provider-portal-Q1_T_hm0RZmA.V.yrNQsUg" target="_blank" rel="noopener" class="btn btn--outline">Become a Provider</a>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </div>
+  </section>
+
+
+  <!-- ==================== MARQUEE ==================== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span class="marquee__item">Beauty</span>
+      <span class="marquee__item">Wellness</span>
+      <span class="marquee__item">Fitness</span>
+      <span class="marquee__item">Cleaning</span>
+      <span class="marquee__item">Repairs</span>
+      <span class="marquee__item">Lawn Care</span>
+      <span class="marquee__item">Pets</span>
+      <span class="marquee__item">Childcare</span>
+      <span class="marquee__item">Senior Care</span>
+      <span class="marquee__item">Moving</span>
+      <span class="marquee__item">Auto</span>
+      <span class="marquee__item">Tech</span>
+      <span class="marquee__item">Events</span>
+      <span class="marquee__item">Laundry</span>
+      <!-- Duplicate for seamless loop -->
+      <span class="marquee__item">Beauty</span>
+      <span class="marquee__item">Wellness</span>
+      <span class="marquee__item">Fitness</span>
+      <span class="marquee__item">Cleaning</span>
+      <span class="marquee__item">Repairs</span>
+      <span class="marquee__item">Lawn Care</span>
+      <span class="marquee__item">Pets</span>
+      <span class="marquee__item">Childcare</span>
+      <span class="marquee__item">Senior Care</span>
+      <span class="marquee__item">Moving</span>
+      <span class="marquee__item">Auto</span>
+      <span class="marquee__item">Tech</span>
+      <span class="marquee__item">Events</span>
+      <span class="marquee__item">Laundry</span>
+    </div>
+  </div>
+
+
+  <!-- ==================== PROVIDER VISIBILITY BANNER ==================== -->
+  <section class="visibility" id="visibility">
+    <div class="visibility__bg" aria-hidden="true">
+      <div class="visibility__pulse"></div>
+      <div class="visibility__pulse visibility__pulse--2"></div>
+      <div class="visibility__pulse visibility__pulse--3"></div>
+    </div>
+    <div class="container">
+      <div class="visibility__badge">
+        <span class="visibility__dot"></span>
+        Live on the NextUp App
+      </div>
+      <h2 class="visibility__headline">Register once.<br>Be seen by <em>everyone.</em></h2>
+      <p class="visibility__sub">The moment you sign up as a provider, your profile goes live on the NextUp iOS app — visible to every customer searching for your services in your area. No ads to buy. No algorithms to fight. Just real people, finding you, right now.</p>
+      <div class="visibility__grid">
+        <div class="visibility__card reveal">
+          <div class="visibility__icon">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M16 8v8l5.5 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="visibility__card-title">Instant Exposure</h3>
+          <p class="visibility__card-text">Your profile is live the moment you register. Customers in your area see you immediately — last-minute, same-day, or scheduled ahead.</p>
+        </div>
+        <div class="visibility__card reveal">
+          <div class="visibility__icon">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="6" width="24" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M4 12h24" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="16" cy="20" r="3" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 class="visibility__card-title">Your Free Advertisement</h3>
+          <p class="visibility__card-text">Think of your profile as a 24/7 ad on the platform. Customers browse, compare, and request — and your name is right there in front of them.</p>
+        </div>
+        <div class="visibility__card reveal">
+          <div class="visibility__icon">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16 4l3.5 7 7.5 1-5.5 5.3L22.8 25 16 21.2 9.2 25l1.3-7.7L5 12l7.5-1L16 4z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 class="visibility__card-title">Clients Come to You</h3>
+          <p class="visibility__card-text">No cold calls. No chasing leads. Customers broadcast what they need, you respond with your price, and they pick you. It's that simple.</p>
+        </div>
+        <div class="visibility__card reveal">
+          <div class="visibility__icon">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="5" y="4" width="22" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M5 8l11 7 11-7" stroke="currentColor" stroke-width="1.5"/>
+              <rect x="16" y="18" width="12" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M19 22h6M19 25h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="visibility__card-title">Instant Push Alerts</h3>
+          <p class="visibility__card-text">Your phone buzzes the second a customer nearby needs your service. Tap the notification, see the details, tap Accept. No app store needed — works on any phone. Free and unlimited.</p>
+        </div>
+      </div>
+      <div class="visibility__cta">
+        <a href="https://www.perplexity.ai/computer/a/nextup-provider-portal-Q1_T_hm0RZmA.V.yrNQsUg" target="_blank" rel="noopener" class="btn btn--dark btn--lg">Start Getting Seen</a>
+        <p class="visibility__price">$19/month &middot; Cancel anytime &middot; No commission fees</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== LIVE DEMO: SEE IT IN ACTION ==================== -->
+  <section class="demo" id="demo">
+    <div class="container">
+      <div class="section__header section__header--center">
+        <p class="label label--light">See It In Action</p>
+        <h2 class="headline headline--section">A real request. Start to finish.</h2>
+        <p class="demo__intro">Sarah needs a deep tissue massage today. Watch how NextUp connects her with nearby providers in minutes.</p>
+      </div>
+
+      <div class="demo__timeline">
+
+        <!-- STEP 1: Customer picks a service -->
+        <div class="demo__step reveal">
+          <div class="demo__step-label">
+            <span class="demo__step-num">01</span>
+            <span class="demo__step-title">Sarah picks a service</span>
+          </div>
+          <div class="demo__phone">
+            <div class="demo__phone-notch"></div>
+            <div class="demo__screen">
+              <div class="demo__app-header">
+                <span class="demo__app-title">NextUp</span>
+                <span class="demo__app-location">Austin, TX</span>
+              </div>
+              <div class="demo__app-search">
+                <span class="demo__search-icon">
+                  <svg viewBox="0 0 16 16" fill="none"><circle cx="7" cy="7" r="5" stroke="currentColor" stroke-width="1.5"/><line x1="11" y1="11" x2="14" y2="14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+                </span>
+                <span class="demo__search-text">Deep Tissue Massage</span>
+                <span class="demo__search-cursor"></span>
+              </div>
+              <div class="demo__app-category">
+                <span class="demo__cat-path">Spa &amp; Wellness &rsaquo; Massage &rsaquo; Deep Tissue</span>
+              </div>
+              <div class="demo__app-results">
+                <div class="demo__result demo__result--selected">
+                  <span class="demo__result-check">&#10003;</span>
+                  <span>Deep Tissue Massage</span>
+                </div>
+                <div class="demo__result">
+                  <span class="demo__result-dot"></span>
+                  <span>Swedish Massage</span>
+                </div>
+                <div class="demo__result">
+                  <span class="demo__result-dot"></span>
+                  <span>Sports Massage</span>
+                </div>
+                <div class="demo__result">
+                  <span class="demo__result-dot"></span>
+                  <span>Prenatal Massage</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 2: Sets filters -->
+        <div class="demo__step reveal">
+          <div class="demo__step-label">
+            <span class="demo__step-num">02</span>
+            <span class="demo__step-title">She sets her filters</span>
+          </div>
+          <div class="demo__phone">
+            <div class="demo__phone-notch"></div>
+            <div class="demo__screen">
+              <div class="demo__app-header">
+                <span class="demo__app-title">Filters</span>
+                <span class="demo__app-clear">Reset</span>
+              </div>
+              <div class="demo__filters">
+                <div class="demo__filter">
+                  <div class="demo__filter-row">
+                    <span class="demo__filter-icon">
+                      <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="8" r="3" stroke="currentColor" stroke-width="1.3"/><path d="M10 18s-7-5.5-7-10a7 7 0 1114 0c0 4.5-7 10-7 10z" stroke="currentColor" stroke-width="1.3"/></svg>
+                    </span>
+                    <span class="demo__filter-label">Distance</span>
+                  </div>
+                  <span class="demo__filter-value">Within 3 miles</span>
+                </div>
+                <div class="demo__filter">
+                  <div class="demo__filter-row">
+                    <span class="demo__filter-icon">
+                      <svg viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.3"/><path d="M10 5v5l3.5 2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+                    </span>
+                    <span class="demo__filter-label">When</span>
+                  </div>
+                  <span class="demo__filter-value">Today, 1:00 PM</span>
+                </div>
+                <div class="demo__filter">
+                  <div class="demo__filter-row">
+                    <span class="demo__filter-icon">
+                      <svg viewBox="0 0 20 20" fill="none"><path d="M10 2l2.5 5 5.5.8-4 3.8 1 5.4L10 14.5 4.9 17l1-5.4-4-3.8 5.5-.8L10 2z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+                    </span>
+                    <span class="demo__filter-label">Minimum Rating</span>
+                  </div>
+                  <span class="demo__filter-value">4+ Stars &#9733;&#9733;&#9733;&#9733;</span>
+                </div>
+                <div class="demo__filter">
+                  <div class="demo__filter-row">
+                    <span class="demo__filter-icon">
+                      <svg viewBox="0 0 20 20" fill="none"><rect x="2" y="3" width="16" height="14" rx="2" stroke="currentColor" stroke-width="1.3"/><path d="M2 8h16" stroke="currentColor" stroke-width="1.3"/><circle cx="6" cy="12" r="1" fill="currentColor"/><circle cx="10" cy="12" r="1" fill="currentColor"/></svg>
+                    </span>
+                    <span class="demo__filter-label">Budget</span>
+                  </div>
+                  <span class="demo__filter-value">Up to $120</span>
+                </div>
+              </div>
+              <div class="demo__screen-btn">Broadcast Request</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 3: Request goes out -->
+        <div class="demo__step reveal">
+          <div class="demo__step-label">
+            <span class="demo__step-num">03</span>
+            <span class="demo__step-title">Request goes live</span>
+          </div>
+          <div class="demo__phone">
+            <div class="demo__phone-notch"></div>
+            <div class="demo__screen demo__screen--broadcast">
+              <div class="demo__broadcast-anim">
+                <div class="demo__broadcast-ring"></div>
+                <div class="demo__broadcast-ring demo__broadcast-ring--2"></div>
+                <div class="demo__broadcast-ring demo__broadcast-ring--3"></div>
+                <div class="demo__broadcast-center">
+                  <svg viewBox="0 0 24 24" fill="none"><path d="M22 2L11 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M22 2L15 22l-4-9-9-4L22 2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                </div>
+              </div>
+              <p class="demo__broadcast-text">Broadcasting to <strong>12 providers</strong><br>within 3 miles&hellip;</p>
+              <div class="demo__broadcast-details">
+                <span>Deep Tissue Massage</span>
+                <span>Today, 1:00 PM</span>
+                <span>Austin, TX</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 4: Providers respond -->
+        <div class="demo__step demo__step--wide reveal">
+          <div class="demo__step-label">
+            <span class="demo__step-num">04</span>
+            <span class="demo__step-title">Providers respond in minutes</span>
+          </div>
+          <div class="demo__phone demo__phone--wide">
+            <div class="demo__phone-notch"></div>
+            <div class="demo__screen">
+              <div class="demo__app-header">
+                <span class="demo__app-title">3 Responses</span>
+                <span class="demo__app-timer">2 min ago</span>
+              </div>
+              <div class="demo__responses">
+                <div class="demo__response demo__response--best">
+                  <div class="demo__resp-badge">Best Match</div>
+                  <div class="demo__resp-top">
+                    <div class="demo__resp-avatar">LM</div>
+                    <div class="demo__resp-info">
+                      <span class="demo__resp-name">Lisa M.</span>
+                      <span class="demo__resp-stars">&#9733;&#9733;&#9733;&#9733;&#9733; 4.9</span>
+                    </div>
+                    <span class="demo__resp-price">$85</span>
+                  </div>
+                  <div class="demo__resp-details">
+                    <span>0.8 mi away</span>
+                    <span>Available 1:00 PM</span>
+                    <span>127 reviews</span>
+                  </div>
+                  <div class="demo__resp-msg">"I can be there at 1 PM! I specialize in deep tissue and sports recovery."</div>
+                </div>
+                <div class="demo__response">
+                  <div class="demo__resp-top">
+                    <div class="demo__resp-avatar">KR</div>
+                    <div class="demo__resp-info">
+                      <span class="demo__resp-name">Kevin R.</span>
+                      <span class="demo__resp-stars">&#9733;&#9733;&#9733;&#9733;&#9734; 4.3</span>
+                    </div>
+                    <span class="demo__resp-price">$70</span>
+                  </div>
+                  <div class="demo__resp-details">
+                    <span>1.4 mi away</span>
+                    <span>Available 1:30 PM</span>
+                    <span>58 reviews</span>
+                  </div>
+                </div>
+                <div class="demo__response">
+                  <div class="demo__resp-top">
+                    <div class="demo__resp-avatar">AR</div>
+                    <div class="demo__resp-info">
+                      <span class="demo__resp-name">Alicia R.</span>
+                      <span class="demo__resp-stars">&#9733;&#9733;&#9733;&#9733;&#9733; 4.8</span>
+                    </div>
+                    <span class="demo__resp-price">$95</span>
+                  </div>
+                  <div class="demo__resp-details">
+                    <span>2.1 mi away</span>
+                    <span>Available 1:15 PM</span>
+                    <span>93 reviews</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STEP 5: Booked! -->
+        <div class="demo__step reveal">
+          <div class="demo__step-label">
+            <span class="demo__step-num">05</span>
+            <span class="demo__step-title">Booked in minutes</span>
+          </div>
+          <div class="demo__phone">
+            <div class="demo__phone-notch"></div>
+            <div class="demo__screen demo__screen--confirmed">
+              <div class="demo__confirmed-check">
+                <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="1.5"/><path d="M15 24l6 6 12-12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <p class="demo__confirmed-title">Confirmed!</p>
+              <p class="demo__confirmed-sub">Deep Tissue Massage</p>
+              <div class="demo__confirmed-details">
+                <div class="demo__confirmed-row">
+                  <span class="demo__confirmed-label">Provider</span>
+                  <span class="demo__confirmed-val">Lisa M. &#9733; 4.9</span>
+                </div>
+                <div class="demo__confirmed-row">
+                  <span class="demo__confirmed-label">When</span>
+                  <span class="demo__confirmed-val">Today, 1:00 PM</span>
+                </div>
+                <div class="demo__confirmed-row">
+                  <span class="demo__confirmed-label">Price</span>
+                  <span class="demo__confirmed-val">$85</span>
+                </div>
+                <div class="demo__confirmed-row">
+                  <span class="demo__confirmed-label">Distance</span>
+                  <span class="demo__confirmed-val">0.8 miles</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /timeline -->
+
+      <p class="demo__footer">This entire flow takes under 5 minutes. That's the power of NextUp.</p>
+
+    </div>
+  </section>
+
+
+<!-- ==================== HOW IT WORKS ==================== -->
+  <section class="section section--dark" id="how-it-works">
+    <div class="container">
+      <div class="section__header section__header--center">
+        <p class="label">How It Works</p>
+        <h2 class="headline headline--section">Three steps. That's it.</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal reveal-delay-1">
+          <div class="step__number">01</div>
+          <h3 class="step__title">Tell us what you need</h3>
+          <p class="step__desc">Pick a service, set your timeframe, tap broadcast. Your request goes out to nearby professionals instantly.</p>
+        </div>
+        <div class="step reveal reveal-delay-2">
+          <div class="step__number">02</div>
+          <h3 class="step__title">Providers respond</h3>
+          <p class="step__desc">Nearby professionals send you their availability and price. No searching, no calling around — they come to you.</p>
+        </div>
+        <div class="step reveal reveal-delay-3">
+          <div class="step__number">03</div>
+          <h3 class="step__title">Choose &amp; book</h3>
+          <p class="step__desc">Compare ratings, distance, and price. Pick the best fit. Confirm with one tap and you're all set.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== SERVICES GRID ==================== -->
+  <section class="section section--charcoal" id="services">
+    <div class="container container--wide">
+      <div class="section__header section__header--center">
+        <p class="label">Services</p>
+        <h2 class="headline headline--section">Everything you need, one app away.</h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal reveal-delay-1">
+          <h3 class="service-card__name">Beauty &amp; Personal Care</h3>
+          <p class="service-card__count">15 services</p>
+          <p class="service-card__examples">Hair, nails, makeup, waxing, lashes, tanning, braiding</p>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <h3 class="service-card__name">Spa &amp; Wellness</h3>
+          <p class="service-card__count">6 services</p>
+          <p class="service-card__examples">Massage, facials, skincare, spa treatments</p>
+        </div>
+        <div class="service-card reveal reveal-delay-3">
+          <h3 class="service-card__name">Health &amp; Fitness</h3>
+          <p class="service-card__count">10 services</p>
+          <p class="service-card__examples">Personal training, yoga, pilates, nutrition, dance</p>
+        </div>
+        <div class="service-card reveal reveal-delay-4">
+          <h3 class="service-card__name">Home Cleaning</h3>
+          <p class="service-card__count">10 services</p>
+          <p class="service-card__examples">Regular, deep clean, move-in/out, carpet, window</p>
+        </div>
+        <div class="service-card reveal reveal-delay-5">
+          <h3 class="service-card__name">Home Maintenance &amp; Repair</h3>
+          <p class="service-card__count">15 services</p>
+          <p class="service-card__examples">Handyman, plumbing, electrical, HVAC, painting</p>
+        </div>
+        <div class="service-card reveal reveal-delay-6">
+          <h3 class="service-card__name">Lawn &amp; Outdoor</h3>
+          <p class="service-card__count">9 services</p>
+          <p class="service-card__examples">Lawn care, landscaping, tree trimming, pool, snow</p>
+        </div>
+        <div class="service-card reveal reveal-delay-1">
+          <h3 class="service-card__name">Pet Services</h3>
+          <p class="service-card__count">7 services</p>
+          <p class="service-card__examples">Dog walking, pet sitting, grooming, training</p>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <h3 class="service-card__name">Childcare &amp; Family</h3>
+          <p class="service-card__count">5 services</p>
+          <p class="service-card__examples">Babysitting, tutoring, after-school, newborn support</p>
+        </div>
+        <div class="service-card reveal reveal-delay-3">
+          <h3 class="service-card__name">Senior &amp; Elder Care</h3>
+          <p class="service-card__count">4 services</p>
+          <p class="service-card__examples">Companionship, in-home assistance, mobility help</p>
+        </div>
+        <div class="service-card reveal reveal-delay-4">
+          <h3 class="service-card__name">Moving &amp; Delivery</h3>
+          <p class="service-card__count">6 services</p>
+          <p class="service-card__examples">Local moving, packing, junk removal, courier</p>
+        </div>
+        <div class="service-card reveal reveal-delay-5">
+          <h3 class="service-card__name">Automotive</h3>
+          <p class="service-card__count">5 services</p>
+          <p class="service-card__examples">Car wash, mobile mechanic, tire change, dent repair</p>
+        </div>
+        <div class="service-card reveal reveal-delay-6">
+          <h3 class="service-card__name">Tech &amp; Smart Home</h3>
+          <p class="service-card__count">6 services</p>
+          <p class="service-card__examples">Computer repair, phone repair, smart home, security</p>
+        </div>
+        <div class="service-card reveal reveal-delay-7">
+          <h3 class="service-card__name">Events &amp; Entertainment</h3>
+          <p class="service-card__count">8 services</p>
+          <p class="service-card__examples">Photography, DJ, catering, bartender, planning</p>
+        </div>
+        <div class="service-card reveal reveal-delay-1">
+          <h3 class="service-card__name">Laundry &amp; Clothing</h3>
+          <p class="service-card__count">5 services</p>
+          <p class="service-card__examples">Dry cleaning, tailoring, shoe repair, ironing</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== EDITORIAL: FOR CUSTOMERS ==================== -->
+  <section class="editorial editorial--light" id="for-customers">
+    <div class="editorial__image">
+      <img src="./assets/lifestyle.png" alt="Customer using NextUp on phone" loading="lazy">
+    </div>
+    <div class="editorial__content reveal">
+      <p class="label editorial__label">For Customers</p>
+      <h2 class="editorial__headline">Stop searching.<br>Let them find you.</h2>
+      <p class="body-text editorial__body">No more calling place after place. Broadcast what you need, and let nearby professionals compete for your business. Compare ratings, prices, and availability — then book with one tap.</p>
+      <div class="editorial__bullets">
+        <span class="editorial__bullet">Always free</span>
+        <span class="editorial__bullet">Instant responses</span>
+        <span class="editorial__bullet">Verified providers</span>
+      </div>
+      <a href="#cta" class="btn btn--dark">Download the App</a>
+    </div>
+  </section>
+
+
+  <!-- ==================== EDITORIAL: FOR PROVIDERS ==================== -->
+  <section class="editorial editorial--reversed" id="for-providers">
+    <div class="editorial__image">
+      <img src="./assets/provider.png" alt="Service provider professional" loading="lazy">
+    </div>
+    <div class="editorial__content reveal">
+      <p class="label editorial__label">For Providers</p>
+      <h2 class="editorial__headline">Your next client is<br>one tap away.</h2>
+      <p class="body-text editorial__body">Join 14 categories of services. The moment you register, your profile becomes a live advertisement on the NextUp app — visible to every customer in your area. Your phone buzzes instantly when someone nearby needs you. Tap the alert, see the request, tap Accept. That's it.</p>
+      <div class="editorial__bullets">
+        <span class="editorial__bullet">Instant push alerts</span>
+        <span class="editorial__bullet">One tap to accept</span>
+        <span class="editorial__bullet">Works on any phone</span>
+      </div>
+      <p class="editorial__key">$19/month · or $199/year · Cancel anytime · Zero commission</p>
+      <a href="https://www.perplexity.ai/computer/a/nextup-provider-portal-Q1_T_hm0RZmA.V.yrNQsUg" target="_blank" rel="noopener" class="btn btn--primary">Get Started</a>
+    </div>
+  </section>
+
+
+  <!-- ==================== COUNTER STRIP ==================== -->
+  <section class="counter-strip" id="counters">
+    <div class="container container--wide">
+      <div class="counter-grid">
+        <div class="counter reveal">
+          <div class="counter__number"><span data-target="113" class="count-up">0</span><span class="counter__suffix">+</span></div>
+          <p class="counter__label">Services Available</p>
+        </div>
+        <div class="counter reveal">
+          <div class="counter__number"><span data-target="14" class="count-up">0</span></div>
+          <p class="counter__label">Categories</p>
+        </div>
+        <div class="counter reveal">
+          <div class="counter__number"><span class="counter__suffix">$</span><span data-target="19" class="count-up">0</span></div>
+          <p class="counter__label">/month for providers</p>
+        </div>
+        <div class="counter reveal">
+          <div class="counter__number" style="font-style: italic;">Free</div>
+          <p class="counter__label">For customers</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== TESTIMONIALS ==================== -->
+  <section class="section section--dark" id="testimonials">
+    <div class="container container--wide">
+      <div class="section__header section__header--center">
+        <p class="label">What People Say</p>
+        <h2 class="headline headline--section">Trusted by thousands.</h2>
+      </div>
+      <div class="testimonials-grid reveal">
+        <div class="testimonial">
+          <blockquote class="testimonial__quote">I needed a last-minute house cleaning before guests arrived. Within minutes, three cleaners responded with prices. Booked one and the place was spotless by evening.</blockquote>
+          <p class="testimonial__name">Sarah M.</p>
+          <p class="testimonial__role">Houston, TX</p>
+        </div>
+        <div class="testimonial">
+          <blockquote class="testimonial__quote">As a mobile barber, NextUp changed everything. I went from hustling for clients on social media to having a full schedule within two weeks of signing up.</blockquote>
+          <p class="testimonial__name">Marcus T.</p>
+          <p class="testimonial__role">Mobile Barber, Dallas</p>
+        </div>
+        <div class="testimonial">
+          <blockquote class="testimonial__quote">My dog needed emergency grooming before a family photo. Found an amazing groomer who came to my home in under an hour. This app is a lifesaver.</blockquote>
+          <p class="testimonial__name">Jennifer L.</p>
+          <p class="testimonial__role">Austin, TX</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== FAQ ==================== -->
+  <section class="section section--charcoal" id="faq">
+    <div class="container">
+      <div class="section__header section__header--center">
+        <p class="label">FAQ</p>
+        <h2 class="headline headline--section">Questions? Answered.</h2>
+      </div>
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            What is NextUp?
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__answer" role="region">
+            <div class="faq-item__answer-inner">
+              <p>NextUp is an on-demand services marketplace that connects you with nearby professionals across 14 categories — from beauty and home cleaning to tech support and pet services. Think of it as one app for everything you need done.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            How does broadcasting work?
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__answer" role="region">
+            <div class="faq-item__answer-inner">
+              <p>When you need a service, you create a broadcast — a short request describing what you need, when, and where. Nearby providers who match your service category see your request and can respond with their availability and price. You choose the best fit.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            What does NextUp cost?
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__answer" role="region">
+            <div class="faq-item__answer-inner">
+              <p>NextUp is completely free for customers. For service providers, plans start at $19/month or $199/year (save over 15%). No commissions, no hidden fees. Cancel anytime.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            Which services are available?
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__answer" role="region">
+            <div class="faq-item__answer-inner">
+              <p>We offer 113 services across 14 categories: Beauty & Personal Care, Spa & Wellness, Health & Fitness, Home Cleaning, Home Maintenance & Repair, Lawn & Outdoor, Pet Services, Childcare & Family, Senior & Elder Care, Moving & Delivery, Automotive, Tech & Smart Home, Events & Entertainment, and Laundry & Clothing.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            How do providers sign up?
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__answer" role="region">
+            <div class="faq-item__answer-inner">
+              <p>Download the NextUp app, select "I'm a Provider," and complete your profile. Choose your service categories, set your availability and service area, and you're ready to start receiving customer broadcasts. Plans start at just $19/month.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            Is there a mobile app?
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__answer" role="region">
+            <div class="faq-item__answer-inner">
+              <p>Yes. NextUp is available on iOS and Android. The mobile app is the primary way to use NextUp — both for finding services and for providers managing their business on the go.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            How do payments work?
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__answer" role="region">
+            <div class="faq-item__answer-inner">
+              <p>Payments are handled directly between you and the provider. NextUp doesn't take a cut of your transaction. Providers set their own prices, and customers pay however they and the provider agree — cash, card, Venmo, or any method that works for both parties.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            Can I cancel my provider subscription anytime?
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__answer" role="region">
+            <div class="faq-item__answer-inner">
+              <p>Absolutely. There are no contracts or commitments. You can cancel your subscription at any time from the app settings. Your account stays active until the end of your billing period.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== CTA ==================== -->
+  <section class="cta-section" id="cta">
+    <div class="container">
+      <h2 class="cta-section__headline">Ready to get started?</h2>
+      <div class="cta-section__buttons">
+        <a href="#services" class="btn btn--primary">Find a Service</a>
+        <a href="https://www.perplexity.ai/computer/a/nextup-provider-portal-Q1_T_hm0RZmA.V.yrNQsUg" target="_blank" rel="noopener" class="btn btn--outline">Become a Provider</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container container--wide">
+      <div class="footer__grid">
+        <div>
+          <h4 class="footer__heading">Product</h4>
+          <a href="#services" class="footer__link">Services</a>
+          <a href="#how-it-works" class="footer__link">How It Works</a>
+          <a href="#faq" class="footer__link">Pricing</a>
+          <a href="#" class="footer__link">Download App</a>
+        </div>
+        <div>
+          <h4 class="footer__heading">Company</h4>
+          <a href="#" class="footer__link">About</a>
+          <a href="#" class="footer__link">Careers</a>
+          <a href="#" class="footer__link">Blog</a>
+          <a href="#" class="footer__link">Press</a>
+        </div>
+        <div>
+          <h4 class="footer__heading">Legal</h4>
+          <a href="#" class="footer__link">Terms of Service</a>
+          <a href="#" class="footer__link">Privacy Policy</a>
+          <a href="#" class="footer__link">Cookie Policy</a>
+          <a href="#" class="footer__link">Accessibility</a>
+        </div>
+        <div>
+          <h4 class="footer__heading">Connect</h4>
+          <a href="#" class="footer__link">Help Center</a>
+          <a href="#" class="footer__link">Contact Us</a>
+          <a href="#" class="footer__link">Community</a>
+          <div class="footer__social" style="margin-top: 12px;">
+            <a href="#" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 4l6.5 8.5L4 20h2l5.5-6.3L16 20h4l-7-9 6-7h-2l-5 5.7L8 4H4z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2026 NextUp. All rights reserved.</p>
+        <div class="footer__attr">
+          <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./app.js" defer></script>
+</body>
+</html>
