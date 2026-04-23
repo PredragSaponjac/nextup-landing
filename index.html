@@ -771,17 +771,56 @@
   <section class="cta-section" id="cta">
     <div class="container">
       <h2 class="cta-section__headline">Ready to get started?</h2>
-      <p style="text-align:center; color:#a8a29e; margin:10px 0 28px; font-size:15px;">NextUp is on iOS and Android. The App Store + Play Store links are coming soon — drop your email and we'll send you a TestFlight invite today.</p>
-      <form class="cta-section__form" action="mailto:pedjap1980@gmail.com" method="post" enctype="text/plain" style="display:flex; gap:10px; max-width:440px; margin:0 auto 24px; flex-wrap:wrap; justify-content:center;">
-        <input type="email" name="email" required placeholder="you@example.com" style="flex:1; min-width:220px; padding:14px 18px; border-radius:999px; border:1px solid #44403c; background:#1a1a1a; color:#fafaf9; font-family:'Satoshi',sans-serif; font-size:15px;">
-        <button type="submit" class="btn btn--primary">Request invite</button>
-      </form>
+      <p style="text-align:center; color:#a8a29e; margin:10px 0 28px; font-size:15px;">Open the web app right now — works on any phone or desktop. iOS and Android apps are coming soon.</p>
+
+      <div id="nx-platform-picker" style="display:flex; gap:14px; max-width:720px; margin:0 auto 24px; flex-wrap:wrap; justify-content:center;">
+        <a id="nx-btn-web"
+           href="https://app.nextupservices.com"
+           class="btn btn--primary btn--lg"
+           style="min-width:220px; position:relative;">
+          <span aria-hidden="true" style="margin-right:8px;">🌐</span> Open web app
+          <span class="nx-recommended" style="display:none; position:absolute; top:-12px; right:-12px; background:#f0b400; color:#000; font-size:11px; padding:3px 10px; border-radius:999px; font-weight:700;">Recommended</span>
+        </a>
+        <a id="nx-btn-ios"
+           href="mailto:privacy@nextupservices.com?subject=TestFlight invite for iPhone&body=Please send me a TestFlight invite so I can try NextUp on iPhone."
+           class="btn btn--dark btn--lg"
+           style="min-width:220px; position:relative;">
+          <span aria-hidden="true" style="margin-right:8px;">📱</span> Get iOS TestFlight
+          <span class="nx-recommended" style="display:none; position:absolute; top:-12px; right:-12px; background:#f0b400; color:#000; font-size:11px; padding:3px 10px; border-radius:999px; font-weight:700;">Recommended</span>
+        </a>
+        <a id="nx-btn-android"
+           href="mailto:privacy@nextupservices.com?subject=Android beta invite&body=Please send me the Android APK so I can try NextUp on my Android phone."
+           class="btn btn--dark btn--lg"
+           style="min-width:220px; position:relative;">
+          <span aria-hidden="true" style="margin-right:8px;">🤖</span> Get Android beta
+          <span class="nx-recommended" style="display:none; position:absolute; top:-12px; right:-12px; background:#f0b400; color:#000; font-size:11px; padding:3px 10px; border-radius:999px; font-weight:700;">Recommended</span>
+        </a>
+      </div>
+      <p style="text-align:center; color:#787478; margin:0 0 28px; font-size:13px;">Once our App Store + Play Store listings go live, the iOS and Android buttons will link straight to those stores.</p>
+
       <div class="cta-section__buttons">
         <a href="#services" class="btn btn--outline">Browse Services</a>
         <a href="#for-providers" class="btn btn--outline">Become a Provider</a>
       </div>
     </div>
   </section>
+
+  <script>
+    // Platform detection — highlight the button most relevant to the visitor.
+    // iPhone/iPad users see the TestFlight button as "Recommended".
+    // Android users see the Android beta button as "Recommended".
+    // Everyone else (desktop, Windows phone, etc.) sees the web app as "Recommended".
+    (function () {
+      var ua = (navigator.userAgent || '').toLowerCase();
+      var isIOS = /iphone|ipad|ipod/.test(ua);
+      var isAndroid = /android/.test(ua);
+      var targetId = isIOS ? 'nx-btn-ios' : isAndroid ? 'nx-btn-android' : 'nx-btn-web';
+      var el = document.getElementById(targetId);
+      if (!el) return;
+      var badge = el.querySelector('.nx-recommended');
+      if (badge) badge.style.display = 'inline-block';
+    })();
+  </script>
 
 
   <!-- ==================== FOOTER ==================== -->
