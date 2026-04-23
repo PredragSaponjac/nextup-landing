@@ -727,6 +727,28 @@
   margin-top: auto;
 }
 
+/* CTA variant — fills the empty grid cell, invites user action */
+.service-card--cta {
+  background: linear-gradient(145deg, #1a1a1a 0%, #0f0f0f 100%);
+  border: 1px dashed #57534e;
+  text-decoration: none;
+  cursor: pointer;
+}
+.service-card--cta:hover {
+  border-color: var(--accent, #f0b400);
+  border-style: solid;
+  transform: translateY(-2px);
+}
+.service-card--cta .service-card__name {
+  color: #f0b400;
+}
+.service-card--cta .service-card__count {
+  color: #a8a29e;
+  letter-spacing: 0;
+  text-transform: none;
+  font-size: 13px;
+}
+
 /* === EDITORIAL SPLIT === */
 .editorial {
   display: grid;
